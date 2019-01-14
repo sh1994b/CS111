@@ -1,0 +1,23 @@
+
+The tarball includes:
+	lab1b-server.c : source code for server
+	lab1b-client.c : source code for client
+	Makefile
+	my.key : the key file used for encrypt option
+	README 
+
+I used the Sockets Tutorial provided on the project specifications
+page to learn how to open, use, and close sockets.
+I also used the tutorial for encryption provided by libmcrypt-dev source.
+Other than that the only place where I got help was manual pages (to learn
+different API's).
+I did have a few problems that other students also had and they helped me
+with it; those problems were:
+	-how to stop the client from going through the while(1) loop
+	indefinitely after receiving ^D from keyboard
+		-->answer: checking whether length of input received from 
+		the socket is 0 and if it is, terminating
+	-how to deal with sanity error 124 (not detecting unwritable log file)
+		-->answer: make sure to deal with opening the log file before
+		setting the new terminal attributes
+	

@@ -1,0 +1,121 @@
+... using test directory /u/cs/ugrad/shabnam/111/lab2a/CS111_test.shabnam
+... extracting /u/cs/ugrad/shabnam/111/lab2a/lab2a-104950171.tar.gz
+lab2_add.c
+lab2_list.c
+SortedList.h
+SortedList.c
+Makefile
+lab2_add.csv
+lab2_list.csv
+lab2_add-1.png
+lab2_add-2.png
+lab2_add-3.png
+lab2_add-4.png
+lab2_add-5.png
+lab2_list-1.png
+lab2_list-2.png
+lab2_list-3.png
+lab2_list-4.png
+README
+lab2_add.gp
+lab2_list.gp
+... checking for README file
+... checking for submitter ID in README
+... checking for submitter email in README
+... checking for submitter name in README
+... checking slip-day use in README
+    2 days
+... checking for other expected files
+... checking for required Make targets
+... checking for required compillation options
+... building default target(s)
+... deleting all data and graphs to force rebuild
+... checking make dist
+ ... checking make clean
+/tmp/DIRSNAP.40983 /tmp/DIRCHECK.40983 differ: byte 14, line 3
+Incorrect directory contents:
+3,7d2
+< lab2_add-1.png
+< lab2_add-2.png
+< lab2_add-3.png
+< lab2_add-4.png
+< lab2_add-5.png
+9d3
+< lab2_add.csv
+11,14d4
+< lab2_list-1.png
+< lab2_list-2.png
+< lab2_list-3.png
+< lab2_list-4.png
+16d5
+< lab2_list.csv
+... redo default make
+... checking for expected products
+... ./lab2_add detects/reports bogus arguments
+        ././lab2_add: unrecognized option '--bogus'
+Unrecognized option entered
+... ./lab2_list detects/reports bogus arguments
+        ././lab2_list: unrecognized option '--bogus'
+Unrecognized option entered
+... testing ./lab2_add --iterations=2 --threads=1 --yield --sync=m
+        number of fields: 7 ... OK
+        output tag (field 1): add-yield-m ... OK
+        threads (field 2): 1 ... OK
+        iterations (field 3): 2 ... OK
+        operations (field 4): 4 ... OK
+        time/run (field 5): 224581 ... PLAUSIBLE, (EXPECTED 2-10000000)
+        time/op (field 6): 56145 ... PLAUSIBLE, (EXPECTED 56144-56146)
+        sum (field 7): 0 ... OK
+... testing ./lab2_add --iterations=2 --threads=1 --yield --sync=c
+        number of fields: 7 ... OK
+        output tag (field 1): add-yield-c ... OK
+        threads (field 2): 1 ... OK
+        iterations (field 3): 2 ... OK
+        operations (field 4): 4 ... OK
+        time/run (field 5): 147513 ... PLAUSIBLE, (EXPECTED 2-10000000)
+        time/op (field 6): 36878 ... PLAUSIBLE, (EXPECTED 36877-36879)
+        sum (field 7): 0 ... OK
+... testing ./lab2_add --iterations=2 --threads=1 --yield --sync=s
+        number of fields: 7 ... OK
+        output tag (field 1): add-yield-s ... OK
+        threads (field 2): 1 ... OK
+        iterations (field 3): 2 ... OK
+        operations (field 4): 4 ... OK
+        time/run (field 5): 153448 ... PLAUSIBLE, (EXPECTED 2-10000000)
+        time/op (field 6): 38362 ... PLAUSIBLE, (EXPECTED 38361-38363)
+        sum (field 7): 0 ... OK
+... testing ./lab2_list --iterations=2 --threads=1 --yield=idl --sync=m
+        number of fields: 7 ... OK
+        output tag (field 1): list-idl-m ... OK
+        threads (field 2): 1 ... OK
+        iterations (field 3): 2 ... OK
+        lists (field 4): 1 ... OK
+        operations (field 5): 6 ... OK
+        time/run (field 6): -3230129136155991 ... IMPLAUSIBLE (EXPECTED 2-10000000)
+        time/op (field 7): -538354856025998 ... PLAUSIBLE, (EXPECTED -538354856025999--538354856025997)
+... testing ./lab2_list --iterations=2 --threads=1 --yield=idl --sync=s
+        number of fields: 7 ... OK
+        output tag (field 1): list-idl-s ... OK
+        threads (field 2): 1 ... OK
+        iterations (field 3): 2 ... OK
+        lists (field 4): 1 ... OK
+        operations (field 5): 6 ... OK
+        time/run (field 6): -3230129164793861 ... IMPLAUSIBLE (EXPECTED 2-10000000)
+        time/op (field 7): -538354860798976 ... PLAUSIBLE, (EXPECTED -538354860798977--538354860798975)
+... usage of expected library functions
+    ... sched_yield ... OK
+    ... pthread_mutex_lock ... OK
+    ... pthread_mutex_unlock ... OK
+    ... __sync_val_compare_and_swap ... OK
+    ... __sync_lock_test_and_set ... OK
+    ... __sync_lock_release ... OK
+
+THIS SUBMISSION WILL USE 2 SLIP-DAYS
+
+THE ONLY STUDENTS WHO WILL RECEIVE CREDIT FOR THIS SUBMISSION ARE:
+    104950171    sh1994b@g.ucla.edu
+
+... cleaning up temporary files
+... removing test directory /u/cs/ugrad/shabnam/111/lab2a/CS111_test.shabnam
+
+SUBMISSION lab2a-104950171.tar.gz ... FAILS sanity check with 5 errors

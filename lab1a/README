@@ -1,0 +1,13 @@
+
+Included files are:
+	lab1a.c : source code for lab1a
+	Makefile : Makefile for this lab
+	README : the current file
+
+I used the manual pages provided for different functions such as 
+poll, waitpid, fork, etc. and the examples provided in them to get 
+an idea of how to work with them. 
+I was specifically having difficulty with fork() and poll() and 
+watching a couple of videos on YouTube helped understand their 
+functionality well.
+
