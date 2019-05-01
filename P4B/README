@@ -1,0 +1,13 @@
+This is the code for a program that can be executed with a BeagleBone Green
+While running, the program outputs 1-second-apart timestamps along with the
+temperature recorded by the BeagleBone sensor at that time to the log file
+and to standard output.
+Upon pressing the physical button connected to the BeagleBone the program exits
+and logs "SHUTDOWN".
+Commands can be entered during the execution:
+  "SCALE=F" changes the scale of temperatures to Farenheit
+  "SCALE=C" changes the scale of temperature readings to Celsius 
+  "STOP" pauses the printing
+  "START" starts the printing
+  "PERIOD= " changes the time period between timestamps to specified value
+  "OFF" does the same thing as pressing the button
